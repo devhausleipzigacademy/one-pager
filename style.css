@@ -2,23 +2,28 @@
 
 :root {
   --theme-color-primary: #5b88b4;
-
   --text-color-primary: rgb(8, 8, 8);
   --text-color-medium: rgb(131, 130, 129);
   --text-color-light: rgb(250, 248, 248);
-
   --bg-color-light: rgb(252, 245, 245);
   --bg-color-secondary: rgb(242, 245, 246);
   --bg-color-dark: rgb(58, 56, 56);
 }
 
 /* Reset */
+
 * {
   padding: 0;
   margin: 0;
   outline: none;
   box-shadow: none;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }
 
 li {
@@ -31,23 +36,18 @@ img {
 }
 
 /* Base */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
   line-height: 1.4;
   font-size: 1.25rem;
   color: var(--text-color-medium);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--text-color-primary);
   font-weight: bold;
   margin-bottom: 1rem;
@@ -75,15 +75,12 @@ h4 {
   h1 {
     font-size: 2.5rem;
   }
-
   h2 {
     font-size: 1.2rem;
   }
-
   h3 {
     font-size: 1.8rem;
   }
-
   h2 {
     font-size: 1.2rem;
   }
@@ -145,6 +142,7 @@ nav a:hover {
 .navigation-menu-desktop ul {
   display: flex;
 }
+
 .navigation-menu-desktop li:not(:first-child) {
   margin-left: 2rem;
 }
@@ -251,8 +249,7 @@ nav a:hover {
 }
 
 @media (max-width: 860px) {
-  .split-media,
-  .split-text {
+  .split-media, .split-text {
     width: 100%;
   }
   .split-media {
@@ -305,6 +302,6 @@ footer a:hover {
   display: flex;
 }
 
-.footer-links ul > li:not(:first-child) {
+.footer-links ul>li:not(:first-child) {
   margin-left: 1em;
 }
